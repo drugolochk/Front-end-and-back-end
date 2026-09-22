@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог Нордклавиш: механические клавиатуры, свитчи, кейкапы и аксессуары. Фильтры по категориям и наличие на складе.">
+  <title>Каталог — Нордклавиш</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <span class="site-header__logo-mark" aria-hidden="true">Nk</span>
+        <span class="site-header__logo-text">
+          Нордклавиш
+          <span class="site-header__logo-sub">механические клавиатуры</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="about.html">О магазине</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <a class="button button--ghost button--small" href="index.html#popular">Популярное</a>
+        <a class="button button--primary button--small" href="order.html">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section--tight" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <p class="section__kicker">10 позиций · 4 категории</p>
+            <h1 class="section__title" id="catalog-title">Каталог</h1>
+            <p class="section__subtitle">Статический фильтр слева ведёт к якорям разделов. Живой поиск и сортировка появятся в КР №4 — здесь карточки собраны вручную, как требует методичка.</p>
+          </div>
+        </header>
+
+        <div class="catalog-layout">
+          <aside class="catalog-filter" aria-label="Фильтр каталога">
+            <h2 class="catalog-filter__title">Категории</h2>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__legend">Разделы</legend>
+              <ul class="catalog-filter__list">
+                <li><a class="catalog-filter__link catalog-filter__link--active" href="#all">Все товары <span class="catalog-filter__count">10</span></a></li>
+                <li><a class="catalog-filter__link" href="#keyboards">Клавиатуры <span class="catalog-filter__count">4</span></a></li>
+                <li><a class="catalog-filter__link" href="#switches">Свитчи <span class="catalog-filter__count">2</span></a></li>
+                <li><a class="catalog-filter__link" href="#keycaps">Кейкапы <span class="catalog-filter__count">2</span></a></li>
+                <li><a class="catalog-filter__link" href="#accessories">Аксессуары <span class="catalog-filter__count">2</span></a></li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__legend">Наличие</legend>
+              <ul class="catalog-filter__list">
+                <li><a class="catalog-filter__link" href="#in-stock">В наличии <span class="catalog-filter__count">9</span></a></li>
+                <li><a class="catalog-filter__link" href="#sold-out">Ожидается <span class="catalog-filter__count">1</span></a></li>
+              </ul>
+            </fieldset>
+            <p class="catalog-filter__note">Фильтр учебный: это обычные якорные ссылки, без JavaScript. Значения категорий совпадают с data-category у карточек.</p>
+          </aside>
+
+          <div id="all">
+            <section class="catalog-group" id="keyboards" aria-labelledby="keyboards-title">
+              <header class="catalog-group__header">
+                <h2 class="catalog-group__title" id="keyboards-title">Клавиатуры</h2>
+                <p class="catalog-group__count">category: keyboards</p>
+              </header>
+              <ul class="product-grid">
+                <li>
+                  <article class="product-card product-card--hit" data-id="1" data-category="keyboards" data-price="18990" data-available="true">
+                    <span class="product-card__badge">Хит</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keyboard-aurora.svg" width="800" height="600" alt="Клавиатура Нордклавиш Aurora 75">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Клавиатуры</p>
+                      <h3 class="product-card__title"><a href="product.html">Nordklavesh Aurora 75</a></h3>
+                      <p class="product-card__description">75% раскладка, hot-swap, алюминий, USB-C. Базовая карточка товара проекта.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">18 990 ₽</p>
+                        <p class="product-card__rating">4.9</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="product.html">Подробнее</a>
+                        <button class="button button--ghost button--small" type="button" data-modal-open="order-modal">Заявка</button>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="product-card product-card--new" data-id="2" data-category="keyboards" data-price="15490" data-available="true">
+                    <span class="product-card__badge">Новинка</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keyboard-frost.svg" width="800" height="600" alt="Клавиатура Нордклавиш Frost TKL">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Клавиатуры</p>
+                      <h3 class="product-card__title"><a href="product.html">Nordklavesh Frost TKL</a></h3>
+                      <p class="product-card__description">Tenkeyless без нумпада, светлый кейкап-сет, линейные свитчи в комплекте.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">15 490 ₽</p>
+                        <p class="product-card__rating">4.8</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="product.html">Подробнее</a>
+                        <a class="button button--ghost button--small" href="order.html">Заявка</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="product-card product-card--discount" data-id="3" data-category="keyboards" data-price="12990" data-available="true">
+                    <span class="product-card__badge">Скидка</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keyboard-tundra.svg" width="800" height="600" alt="Клавиатура Нордклавиш Tundra Full">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Клавиатуры</p>
+                      <h3 class="product-card__title"><a href="product.html">Nordklavesh Tundra Full</a></h3>
+                      <p class="product-card__description">Полный размер с цифровым блоком. Скидка на остаток партии.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">12 990 ₽ <span class="product-card__price-old">15 990 ₽</span></p>
+                        <p class="product-card__rating">4.6</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="product.html">Подробнее</a>
+                        <a class="button button--ghost button--small" href="order.html">Заявка</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li id="sold-out">
+                  <article class="product-card product-card--sold-out" data-id="4" data-category="keyboards" data-price="21990" data-available="false">
+                    <span class="product-card__badge">Ожидается</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keyboard-fjord.svg" width="800" height="600" alt="Клавиатура Нордклавиш Fjord 100, позиция ожидается">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Клавиатуры</p>
+                      <h3 class="product-card__title"><a href="product.html">Nordklavesh Fjord 100</a></h3>
+                      <p class="product-card__description">Полноразмерная беспроводная сборка. Следующая партия — через две недели.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">21 990 ₽</p>
+                        <p class="product-card__rating">4.7</p>
+                      </div>
+                      <p class="product-card__status">Нет в наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="product.html">Подробнее</a>
+                        <span class="button button--disabled button--small" aria-disabled="true">Недоступно</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+
+            <section class="catalog-group" id="switches" aria-labelledby="switches-title">
+              <header class="catalog-group__header">
+                <h2 class="catalog-group__title" id="switches-title">Свитчи</h2>
+                <p class="catalog-group__count">category: switches</p>
+              </header>
+              <ul class="product-grid">
+                <li>
+                  <article class="product-card" data-id="5" data-category="switches" data-price="3490" data-available="true">
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/switch-linear.svg" width="800" height="600" alt="Набор линейных свитчей Nord Linear 70">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Свитчи</p>
+                      <h3 class="product-card__title">Nord Linear 70</h3>
+                      <p class="product-card__description">70 линейных свитчей 45 г. Подходят для игр и быстрого набора без тактильного бугра.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">3 490 ₽</p>
+                        <p class="product-card__rating">4.7</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <button class="button button--ghost button--small" type="button" data-modal-open="order-modal">Заявка</button>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="product-card product-card--new" data-id="6" data-category="switches" data-price="3790" data-available="true">
+                    <span class="product-card__badge">Новинка</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/switch-tactile.svg" width="800" height="600" alt="Набор тактильных свитчей Nord Tactile 70">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Свитчи</p>
+                      <h3 class="product-card__title">Nord Tactile 70</h3>
+                      <p class="product-card__description">Тактильный ход без щелчка. 55 г, нейлоновый корпус, заводская лубрикация пружины.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">3 790 ₽</p>
+                        <p class="product-card__rating">4.8</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <a class="button button--ghost button--small" href="order.html">Заявка</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+
+            <section class="catalog-group" id="keycaps" aria-labelledby="keycaps-title">
+              <header class="catalog-group__header">
+                <h2 class="catalog-group__title" id="keycaps-title">Кейкапы</h2>
+                <p class="catalog-group__count">category: keycaps</p>
+              </header>
+              <ul class="product-grid">
+                <li>
+                  <article class="product-card product-card--hit" data-id="7" data-category="keycaps" data-price="5990" data-available="true">
+                    <span class="product-card__badge">Хит</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keycaps-runes.svg" width="800" height="600" alt="Набор кейкапов Runes PBT">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Кейкапы</p>
+                      <h3 class="product-card__title">Runes PBT Set</h3>
+                      <p class="product-card__description">PBT, профиль Cherry, легенды с рунами. Комплект на ANSI и ISO.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">5 990 ₽</p>
+                        <p class="product-card__rating">4.9</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <button class="button button--ghost button--small" type="button" data-modal-open="order-modal">Заявка</button>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="product-card" data-id="8" data-category="keycaps" data-price="4490" data-available="true">
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/keycaps-glacier.svg" width="800" height="600" alt="Набор кейкапов Glacier PBT в холодной гамме">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Кейкапы</p>
+                      <h3 class="product-card__title">Glacier PBT Set</h3>
+                      <p class="product-card__description">Холодная палитра под Frost TKL. Двойная легенда, толщина 1.5 мм.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">4 490 ₽</p>
+                        <p class="product-card__rating">4.5</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <a class="button button--ghost button--small" href="order.html">Заявка</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+
+            <section class="catalog-group" id="accessories" aria-labelledby="accessories-title">
+              <header class="catalog-group__header">
+                <h2 class="catalog-group__title" id="accessories-title">Аксессуары</h2>
+                <p class="catalog-group__count">category: accessories</p>
+              </header>
+              <ul class="product-grid" id="in-stock">
+                <li>
+                  <article class="product-card product-card--discount" data-id="9" data-category="accessories" data-price="1490" data-available="true">
+                    <span class="product-card__badge">Скидка</span>
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/accessory-cable.svg" width="800" height="600" alt="Кабель USB-C Nord Coil с медной оплёткой">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Аксессуары</p>
+                      <h3 class="product-card__title">Nord Coil USB-C</h3>
+                      <p class="product-card__description">Витой кабель 1.5 м, авиационный коннектор, оплётка под медный акцент витрины.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">1 490 ₽ <span class="product-card__price-old">1 990 ₽</span></p>
+                        <p class="product-card__rating">4.4</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <a class="button button--ghost button--small" href="order.html">Заявка</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="product-card" data-id="10" data-category="accessories" data-price="3990" data-available="true">
+                    <figure class="product-card__media">
+                      <img class="product-card__image" src="images/accessory-wrist-rest.svg" width="800" height="600" alt="Деревянная подставка под запястье Nord Rest">
+                    </figure>
+                    <div class="product-card__body">
+                      <p class="product-card__category">Аксессуары</p>
+                      <h3 class="product-card__title">Nord Rest Wood</h3>
+                      <p class="product-card__description">Подставка из ясеня для 75% и TKL. Сглаженный край, резиновые ножки.</p>
+                      <div class="product-card__meta">
+                        <p class="product-card__price">3 990 ₽</p>
+                        <p class="product-card__rating">4.6</p>
+                      </div>
+                      <p class="product-card__status">В наличии</p>
+                      <div class="product-card__actions">
+                        <a class="button button--primary button--small" href="order.html">Подробнее</a>
+                        <button class="button button--ghost button--small" type="button" data-modal-open="order-modal">Заявка</button>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container site-footer__inner">
+      <section>
+        <h2 class="site-footer__title">Нордклавиш</h2>
+        <p class="site-footer__text">Учебный интернет-магазин механических клавиатур. Контрольная работа №1.</p>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Разделы</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="product.html">Карточка товара</a></li>
+          <li><a href="about.html">О магазине</a></li>
+          <li><a href="order.html">Заявка</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Якоря</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html#advantages">Преимущества</a></li>
+          <li><a href="index.html#popular">Популярные товары</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+          <li><a href="contacts.html">Форма обратной связи</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Нордклавиш. Учебный проект.</p>
+      <p>HTML / CSS · КР №1</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#main">Наверх</a>
+
+  <dialog class="order-modal" id="order-modal" aria-labelledby="order-modal-title">
+    <div class="order-modal__inner">
+      <div class="order-modal__header">
+        <h2 class="order-modal__title" id="order-modal-title">Быстрая заявка</h2>
+        <button class="order-modal__close" type="button" data-modal-close aria-label="Закрыть окно">&times;</button>
+      </div>
+      <p class="order-modal__text">Выберите товар из каталога. Полная форма — на странице заявки.</p>
+      <form class="order-form" action="#" method="post">
+        <div class="order-form__grid">
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-name">Имя <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-email">E-mail <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-phone">Телефон <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-product">Товар</label>
+            <select class="order-form__select" id="modal-product" name="productId">
+              <option value="1">Nordklavesh Aurora 75</option>
+              <option value="2">Nordklavesh Frost TKL</option>
+              <option value="3">Nordklavesh Tundra Full</option>
+              <option value="5">Nord Linear 70</option>
+              <option value="7">Runes PBT Set</option>
+              <option value="consult">Консультация</option>
+            </select>
+          </div>
+        </div>
+        <label class="order-form__consent">
+          <input class="order-form__checkbox" name="consent" type="checkbox" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить</button>
+          <button class="button button--ghost" type="button" data-modal-close>Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

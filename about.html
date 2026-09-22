@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О мастерской Нордклавиш: история учебной витрины, доставка, гарантия и как устроена сборка механических клавиатур.">
+  <title>О магазине — Нордклавиш</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <span class="site-header__logo-mark" aria-hidden="true">Nk</span>
+        <span class="site-header__logo-text">
+          Нордклавиш
+          <span class="site-header__logo-sub">механические клавиатуры</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="about.html">О магазине</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <a class="button button--ghost button--small" href="catalog.html">Каталог</a>
+        <a class="button button--primary button--small" href="order.html">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <p class="section__kicker">Мастерская</p>
+            <h1 class="section__title" id="about-title">О магазине</h1>
+            <p class="section__subtitle">«Нордклавиш» — учебная витрина механических клавиатур. Страница добавлена сверх обязательного списка: так проще показать доставку, гарантию и историю бренда.</p>
+          </div>
+        </header>
+
+        <div class="contacts-layout">
+          <div>
+            <p>Мы собираем клавиатуры так, будто ими будут пользоваться каждый день: стабилизаторы смазаны, свитчи проверены, кабель не люфтит в гнезде. Каталог специально узкий — десять позиций с одинаковой моделью данных, чтобы потом без боли перенести его в JavaScript и API.</p>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">2024</span>
+                <p class="timeline__text">Первые тестовые сборки 75% и TKL для знакомых.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2025</span>
+                <p class="timeline__text">Появились собственные кейкапы Runes и Glacier.</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2026</span>
+                <p class="timeline__text">Учебный сайт Нордклавиш: витрина, заявка, задел под бэкенд.</p>
+              </li>
+            </ol>
+          </div>
+          <aside class="side-note">
+            <h2 class="side-note__title">Задел на следующие КР</h2>
+            <p class="side-note__text">Категории keyboards, switches, keycaps, accessories и поля товара id / title / category / price / isAvailable уже стоят в разметке. КР №2 повторит тему на Bootstrap, КР №3 добавит адаптив, КР №4 — живой каталог.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="service-title">
+      <div class="container">
+        <h2 class="section__title" id="service-title">Доставка и гарантия</h2>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3 class="info-card__title">Доставка</h3>
+            <p class="info-card__text">Москва — курьер на следующий день после сборки. Регионы — СДЭК и Почта России. Самовывоз из шоурума на Печатников, 7.</p>
+          </article>
+          <article class="info-card">
+            <h3 class="info-card__title">Гарантия</h3>
+            <p class="info-card__text">24 месяца на собственные сборки. Свитчи и кейкапы сторонних наборов — 12 месяцев. Расходники для лубрикации не входят в гарантию.</p>
+          </article>
+          <article class="info-card">
+            <h3 class="info-card__title">Оплата</h3>
+            <p class="info-card__text">В учебном проекте оплаты нет. В реальном сценарии это была бы предоплата по счёту после подтверждения состава заявки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 class="cta__title">Посмотреть витрину</h2>
+            <p class="cta__text">Каталог уже собран: карточки, бейджи, наличие и сравнение на странице товара.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="button button--primary" href="catalog.html">Открыть каталог</a>
+            <a class="button button--ghost" href="contacts.html">Написать нам</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container site-footer__inner">
+      <section>
+        <h2 class="site-footer__title">Нордклавиш</h2>
+        <p class="site-footer__text">Учебный интернет-магазин механических клавиатур. Контрольная работа №1.</p>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Разделы</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="product.html">Карточка товара</a></li>
+          <li><a href="order.html">Заявка</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Якоря</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html#advantages">Преимущества</a></li>
+          <li><a href="index.html#popular">Популярные товары</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+          <li><a href="contacts.html">Форма обратной связи</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Нордклавиш. Учебный проект.</p>
+      <p>HTML / CSS · КР №1</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#main">Наверх</a>
+  <script src="js/main.js"></script>
+</body>
+</html>

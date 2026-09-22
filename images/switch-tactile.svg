@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgTac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2340"/>
+      <stop offset="1" stop-color="#0a1526"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgTac)"/>
+  <circle cx="180" cy="180" r="130" fill="#8f7bd6" opacity="0.18"/>
+  <g>
+    <rect x="180" y="240" width="150" height="150" rx="18" fill="#232a4c"/>
+    <rect x="208" y="208" width="94" height="46" rx="10" fill="#8f7bd6"/>
+    <rect x="236" y="184" width="38" height="34" rx="8" fill="#a993e8"/>
+    <rect x="200" y="390" width="24" height="34" rx="6" fill="#3c4680"/>
+    <rect x="286" y="390" width="24" height="34" rx="6" fill="#3c4680"/>
+  </g>
+  <g opacity="0.9">
+    <rect x="380" y="258" width="130" height="132" rx="16" fill="#212847"/>
+    <rect x="406" y="230" width="80" height="40" rx="9" fill="#8f7bd6"/>
+    <rect x="432" y="208" width="32" height="30" rx="7" fill="#a993e8"/>
+    <rect x="398" y="390" width="20" height="30" rx="5" fill="#3c4680"/>
+    <rect x="472" y="390" width="20" height="30" rx="5" fill="#3c4680"/>
+  </g>
+  <g opacity="0.78">
+    <rect x="552" y="274" width="112" height="116" rx="14" fill="#1e2442"/>
+    <rect x="574" y="250" width="68" height="34" rx="8" fill="#8f7bd6"/>
+    <rect x="596" y="230" width="26" height="26" rx="6" fill="#a993e8"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgFjord" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101d34"/>
+      <stop offset="1" stop-color="#080f1c"/>
+    </linearGradient>
+    <pattern id="keysFjord" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect x="4" y="4" width="42" height="42" rx="8" fill="#182a45"/>
+      <rect x="4" y="4" width="42" height="32" rx="8" fill="#22385c"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgFjord)"/>
+  <circle cx="400" cy="120" r="140" fill="#4c7aa8" opacity="0.14"/>
+  <rect x="60" y="210" width="680" height="220" rx="20" fill="#0d1a2c"/>
+  <rect x="60" y="210" width="680" height="220" rx="20" fill="none" stroke="#4c7aa8" stroke-width="3"/>
+  <rect x="84" y="234" width="500" height="172" fill="url(#keysFjord)"/>
+  <rect x="596" y="234" width="120" height="172" fill="url(#keysFjord)"/>
+  <rect x="88" y="238" width="42" height="32" rx="8" fill="#c9743a"/>
+  <rect x="60" y="438" width="680" height="14" rx="7" fill="#0b1729"/>
+  <g opacity="0.85">
+    <rect x="330" y="470" width="140" height="34" rx="17" fill="#31241d"/>
+    <text x="400" y="493" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#e2a97e" text-anchor="middle">68405BAO</text>
+  </g>
+</svg>

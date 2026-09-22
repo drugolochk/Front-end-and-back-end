@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Заявка в магазин Нордклавиш: консультация, сборка клавиатуры или заказ из каталога. Учебная форма без отправки на сервер.">
+  <title>Заявка — Нордклавиш</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">
+        <span class="site-header__logo-mark" aria-hidden="true">Nk</span>
+        <span class="site-header__logo-text">
+          Нордклавиш
+          <span class="site-header__logo-sub">механические клавиатуры</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="about.html">О магазине</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <a class="button button--ghost button--small" href="catalog.html">К каталогу</a>
+        <a class="button button--primary button--small" href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="order-title">
+      <div class="container">
+        <header class="section__header">
+          <div>
+            <p class="section__kicker">Оформление</p>
+            <h1 class="section__title" id="order-title">Заявка на сборку или консультацию</h1>
+            <p class="section__subtitle">Поля совпадают с будущим API заказа: name, email, phone, productId, comment, consent. Сейчас форма никуда не отправляется — action стоит на текущую страницу.</p>
+          </div>
+        </header>
+
+        <div class="contacts-layout">
+          <aside class="side-note">
+            <h2 class="side-note__title">Что происходит после заявки</h2>
+            <p class="side-note__text">В учебном проекте браузер только проверяет required и type="email". В следующих контрольных появится JS-валидация, а затем сервер. Пока достаточно корректной разметки и подписей.</p>
+            <p class="side-note__text" style="margin-top: 16px;">Можно открыть и короткое модальное окно — та же структура полей, меньше комментария.</p>
+            <p style="margin: 16px 0 0;">
+              <button class="button button--ghost" type="button" data-modal-open="order-modal">Открыть модалку</button>
+            </p>
+          </aside>
+
+          <form class="order-form" action="#" method="post">
+            <div class="order-form__grid">
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-name">Имя <span class="order-form__required">*</span></label>
+                <input class="order-form__input" id="order-name" name="name" type="text" autocomplete="name" placeholder="Иван Петров" required>
+                <span class="order-form__hint">Как к вам обращаться в письме.</span>
+              </div>
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-email">E-mail <span class="order-form__required">*</span></label>
+                <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+                <span class="order-form__hint">На этот адрес придёт подтверждение состава.</span>
+              </div>
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-phone">Телефон <span class="order-form__required">*</span></label>
+                <input class="order-form__input" id="order-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+              </div>
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-product">Товар или тема заявки <span class="order-form__required">*</span></label>
+                <select class="order-form__select" id="order-product" name="productId" required>
+                  <option value="">Выберите позицию</option>
+                  <option value="1">Nordklavesh Aurora 75</option>
+                  <option value="2">Nordklavesh Frost TKL</option>
+                  <option value="3">Nordklavesh Tundra Full</option>
+                  <option value="4">Nordklavesh Fjord 100</option>
+                  <option value="5">Nord Linear 70</option>
+                  <option value="6">Nord Tactile 70</option>
+                  <option value="7">Runes PBT Set</option>
+                  <option value="8">Glacier PBT Set</option>
+                  <option value="9">Nord Coil USB-C</option>
+                  <option value="10">Nord Rest Wood</option>
+                  <option value="consult">Другое / консультация</option>
+                </select>
+              </div>
+              <div class="order-form__field order-form__field--wide">
+                <label class="order-form__label" for="order-comment">Комментарий</label>
+                <textarea class="order-form__textarea" id="order-comment" name="comment" placeholder="Раскладка, цвет кейкапов, нужен ли лубрикант…"></textarea>
+              </div>
+            </div>
+            <label class="order-form__consent">
+              <input class="order-form__checkbox" id="order-consent" name="consent" type="checkbox" required>
+              <span>Согласен на обработку персональных данных. Без отметки заявка не отправится.</span>
+            </label>
+            <div class="order-form__actions">
+              <button class="button button--primary" type="submit">Отправить заявку</button>
+              <button class="button button--ghost" type="reset">Очистить</button>
+            </div>
+            <p class="order-form__note">Обязательные поля отмечены звёздочкой. Проверка e-mail — встроенный type="email".</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container site-footer__inner">
+      <section>
+        <h2 class="site-footer__title">Нордклавиш</h2>
+        <p class="site-footer__text">Учебный интернет-магазин механических клавиатур. Контрольная работа №1.</p>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Разделы</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="product.html">Карточка товара</a></li>
+          <li><a href="about.html">О магазине</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="site-footer__title">Якоря</h2>
+        <ul class="site-footer__list">
+          <li><a href="index.html#advantages">Преимущества</a></li>
+          <li><a href="index.html#popular">Популярные товары</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+          <li><a href="contacts.html">Форма обратной связи</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© 2026 Нордклавиш. Учебный проект.</p>
+      <p>HTML / CSS · КР №1</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#main">Наверх</a>
+
+  <dialog class="order-modal" id="order-modal" aria-labelledby="order-modal-title">
+    <div class="order-modal__inner">
+      <div class="order-modal__header">
+        <h2 class="order-modal__title" id="order-modal-title">Короткая заявка</h2>
+        <button class="order-modal__close" type="button" data-modal-close aria-label="Закрыть окно">&times;</button>
+      </div>
+      <form class="order-form" action="#" method="post">
+        <div class="order-form__grid">
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-name">Имя <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-name" name="name" type="text" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-email">E-mail <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-email" name="email" type="email" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-phone">Телефон <span class="order-form__required">*</span></label>
+            <input class="order-form__input" id="modal-phone" name="phone" type="tel" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="modal-product">Товар</label>
+            <select class="order-form__select" id="modal-product" name="productId">
+              <option value="consult">Консультация</option>
+              <option value="1">Nordklavesh Aurora 75</option>
+            </select>
+          </div>
+        </div>
+        <label class="order-form__consent">
+          <input class="order-form__checkbox" name="consent" type="checkbox" required>
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить</button>
+          <button class="button button--ghost" type="button" data-modal-close>Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

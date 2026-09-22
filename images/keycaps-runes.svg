@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgRunes" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1d16"/>
+      <stop offset="1" stop-color="#0a1526"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgRunes)"/>
+  <circle cx="600" cy="170" r="140" fill="#c9743a" opacity="0.2"/>
+  <g font-family="Consolas, Menlo, monospace" font-size="46" fill="#2a1d16" text-anchor="middle">
+    <g>
+      <rect x="150" y="180" width="120" height="120" rx="16" fill="#e6d5c3"/>
+      <rect x="150" y="180" width="120" height="100" rx="16" fill="#f3e6d6"/>
+      <text x="210" y="252">�</text>
+    </g>
+    <g>
+      <rect x="300" y="180" width="120" height="120" rx="16" fill="#d9a273"/>
+      <rect x="300" y="180" width="120" height="100" rx="16" fill="#e8b98c"/>
+      <text x="360" y="252">�</text>
+    </g>
+    <g>
+      <rect x="450" y="180" width="120" height="120" rx="16" fill="#e6d5c3"/>
+      <rect x="450" y="180" width="120" height="100" rx="16" fill="#f3e6d6"/>
+      <text x="510" y="252">�</text>
+    </g>
+    <g>
+      <rect x="225" y="330" width="120" height="120" rx="16" fill="#d9a273"/>
+      <rect x="225" y="330" width="120" height="100" rx="16" fill="#e8b98c"/>
+      <text x="285" y="402">�</text>
+    </g>
+    <g>
+      <rect x="375" y="330" width="120" height="120" rx="16" fill="#e6d5c3"/>
+      <rect x="375" y="330" width="120" height="100" rx="16" fill="#f3e6d6"/>
+      <text x="435" y="402">�</text>
+    </g>
+  </g>
+</svg>
