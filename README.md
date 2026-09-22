@@ -15,7 +15,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: _вставить после публикации, например `https://username.github.io/kr1-html-css-shop/`_
+GitHub Pages: https://drugolochk.github.io/Front-end-and-back-end/
 
 Репозиторий для СДО: _вставить URL репозитория_
 
